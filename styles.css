@@ -105,6 +105,10 @@ main,
   background: linear-gradient(135deg, var(--brand), var(--brand-soft));
 }
 
+.brand-image {
+  object-fit: cover;
+}
+
 .site-nav {
   display: flex;
   gap: 20px;
@@ -158,6 +162,15 @@ main {
   font-size: clamp(2.1rem, 5.3vw, 4.4rem);
   line-height: 1.06;
   letter-spacing: -0.03em;
+}
+
+.hero-logo {
+  margin-top: 20px;
+  width: min(320px, 70vw);
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+  display: block;
 }
 
 .hero-copy {
@@ -279,6 +292,22 @@ main {
   font-size: 0.92rem;
 }
 
+.logo-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-chip img {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.logo-chip-brand {
+  color: var(--ink);
+}
+
 .roadmap {
   margin-top: 20px;
   padding: 18px 22px 18px 36px;
@@ -358,6 +387,14 @@ input {
 .portal-card {
   width: min(520px, 100%);
   padding: 26px;
+}
+
+.portal-logo {
+  margin-top: 14px;
+  width: min(280px, 64vw);
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  display: block;
 }
 
 .portal-copy {
