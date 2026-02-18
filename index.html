@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskHawk | Field Ops, in Real Time</title>
+    <meta
+      name="description"
+      content="TaskHawk helps teams manage field operations with live job tracking, handoffs, and mobile-first workflows."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="aurora" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top">TaskHawk</a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#how">How It Works</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="btn btn-small" href="#contact">Get Started</a>
+    </header>
+
+    <main id="top">
+      <section class="hero reveal">
+        <p class="eyebrow">Built For Apple-Connected Workflows</p>
+        <h1>Move Jobs Faster From Dispatch To Done.</h1>
+        <p>
+          TaskHawk gives your team one place to assign, track, and complete field work,
+          while your iOS app stays in sync through secure API endpoints and Universal Links.
+        </p>
+        <div class="hero-actions">
+          <a class="btn" href="#contact">Book a Demo</a>
+          <a class="btn btn-ghost" href="#how">See Platform Flow</a>
+        </div>
+      </section>
+
+      <section class="stats reveal">
+        <article>
+          <h2>40%</h2>
+          <p>Faster first-response dispatch time</p>
+        </article>
+        <article>
+          <h2>99.9%</h2>
+          <p>Uptime on production deployments</p>
+        </article>
+        <article>
+          <h2>1 Tap</h2>
+          <p>Job deep-linking from SMS/email to app</p>
+        </article>
+      </section>
+
+      <section id="features" class="features reveal">
+        <h2>What You Get</h2>
+        <div class="feature-grid">
+          <article>
+            <h3>Live Job Board</h3>
+            <p>Track status changes in real time and reduce radio/phone overhead.</p>
+          </article>
+          <article>
+            <h3>iOS Deep Linking</h3>
+            <p>Open jobs directly in your app with verified domain-based links.</p>
+          </article>
+          <article>
+            <h3>Team Handoffs</h3>
+            <p>Structured notes, attachments, and sign-offs across shifts.</p>
+          </article>
+          <article>
+            <h3>Audit Trail</h3>
+            <p>Time-stamped activity history for compliance and client reporting.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" class="how reveal">
+        <h2>Deployment Stack</h2>
+        <ol>
+          <li><strong>Website:</strong> <code>www.yourdomain.com</code> on Vercel</li>
+          <li><strong>API:</strong> <code>api.yourdomain.com</code> for app traffic</li>
+          <li><strong>Apple Links:</strong> <code>/.well-known/apple-app-site-association</code></li>
+        </ol>
+      </section>
+
+      <section id="contact" class="contact reveal">
+        <h2>Launch This Week</h2>
+        <p>Replace this with your real contact route or embedded calendar.</p>
+        <form>
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Work email
+            <input type="email" placeholder="name@company.com" />
+          </label>
+          <label>
+            Team size
+            <input type="text" placeholder="10 technicians" />
+          </label>
+          <button type="button" class="btn" id="fake-submit">Send Request</button>
+        </form>
+        <p class="small" id="form-status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> TaskHawk. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
