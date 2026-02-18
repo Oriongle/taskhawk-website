@@ -3,115 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TaskHawk | Field Ops, in Real Time</title>
+    <title>TaskHawk | Coming Soon</title>
     <meta
       name="description"
-      content="TaskHawk helps teams manage field operations with live job tracking, handoffs, and mobile-first workflows."
+      content="TaskHawk is launching soon: field ops dispatch, live job tracking, client portal workflows, and Apple-connected deep links in one platform."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="aurora" aria-hidden="true"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-one" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-two" aria-hidden="true"></div>
+
     <header class="site-header">
-      <a class="brand" href="#top">TaskHawk</a>
-      <nav>
+      <a class="brand" href="/">
+        <span class="brand-mark" aria-hidden="true">TH</span>
+        <span>TaskHawk</span>
+      </a>
+      <nav class="site-nav">
         <a href="#features">Features</a>
-        <a href="#how">How It Works</a>
+        <a href="#platform">Platform</a>
+        <a href="#roadmap">Roadmap</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="btn btn-small" href="#contact">Get Started</a>
+      <a class="btn btn-outline" href="portal.html">Portal Login</a>
     </header>
 
-    <main id="top">
+    <main>
       <section class="hero reveal">
-        <p class="eyebrow">Built For Apple-Connected Workflows</p>
-        <h1>Move Jobs Faster From Dispatch To Done.</h1>
-        <p>
-          TaskHawk gives your team one place to assign, track, and complete field work,
-          while your iOS app stays in sync through secure API endpoints and Universal Links.
+        <p class="badge">Coming Soon | Summer 2026</p>
+        <h1>TaskHawk Is Building The Field Ops Command Layer.</h1>
+        <p class="hero-copy">
+          Dispatch, technicians, operations managers, and clients all work from one source of truth.
+          Built to pair with your iOS app and secure deep-link workflows.
         </p>
         <div class="hero-actions">
-          <a class="btn" href="#contact">Book a Demo</a>
-          <a class="btn btn-ghost" href="#how">See Platform Flow</a>
+          <a class="btn" href="#contact">Join Early Access</a>
+          <a class="btn btn-outline" href="portal.html">Open Portal</a>
         </div>
       </section>
 
-      <section class="stats reveal">
+      <section class="kpis reveal">
         <article>
-          <h2>40%</h2>
-          <p>Faster first-response dispatch time</p>
+          <p class="kpi-value">1 Platform</p>
+          <p class="kpi-label">Dispatch, jobs, customer updates, and reporting.</p>
         </article>
         <article>
-          <h2>99.9%</h2>
-          <p>Uptime on production deployments</p>
+          <p class="kpi-value">Live Sync</p>
+          <p class="kpi-label">Real-time status updates between web and app.</p>
         </article>
         <article>
-          <h2>1 Tap</h2>
-          <p>Job deep-linking from SMS/email to app</p>
+          <p class="kpi-value">Secure Links</p>
+          <p class="kpi-label">Verified Universal Links for Apple workflows.</p>
         </article>
       </section>
 
-      <section id="features" class="features reveal">
-        <h2>What You Get</h2>
+      <section id="features" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Core Feature Set</p>
+          <h2>Everything Needed To Run Jobs End-To-End</h2>
+        </div>
         <div class="feature-grid">
-          <article>
-            <h3>Live Job Board</h3>
-            <p>Track status changes in real time and reduce radio/phone overhead.</p>
+          <article class="card">
+            <h3>Dispatch Console</h3>
+            <p>Assign jobs by region, team, and urgency with clear ownership at every step.</p>
           </article>
-          <article>
-            <h3>iOS Deep Linking</h3>
-            <p>Open jobs directly in your app with verified domain-based links.</p>
+          <article class="card">
+            <h3>Technician Flow</h3>
+            <p>Mobile-first task views, checklists, and completion proof in one guided interface.</p>
           </article>
-          <article>
-            <h3>Team Handoffs</h3>
-            <p>Structured notes, attachments, and sign-offs across shifts.</p>
+          <article class="card">
+            <h3>Client Portal</h3>
+            <p>Secure customer login to track live progress, documents, and appointment windows.</p>
           </article>
-          <article>
-            <h3>Audit Trail</h3>
-            <p>Time-stamped activity history for compliance and client reporting.</p>
+          <article class="card">
+            <h3>Job Timeline</h3>
+            <p>Every event is timestamped for auditability and post-job reporting.</p>
+          </article>
+          <article class="card">
+            <h3>Photo + Notes Pack</h3>
+            <p>Structured site evidence attached directly to each job handoff and completion.</p>
+          </article>
+          <article class="card">
+            <h3>Automated Alerts</h3>
+            <p>Notify clients and teams on status change, delay, completion, and follow-up actions.</p>
           </article>
         </div>
       </section>
 
-      <section id="how" class="how reveal">
-        <h2>Deployment Stack</h2>
-        <ol>
-          <li><strong>Website:</strong> <code>www.yourdomain.com</code> on Vercel</li>
-          <li><strong>API:</strong> <code>api.yourdomain.com</code> for app traffic</li>
-          <li><strong>Apple Links:</strong> <code>/.well-known/apple-app-site-association</code></li>
+      <section id="platform" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Connected Stack</p>
+          <h2>Built To Fit Your Existing Tools</h2>
+        </div>
+        <div class="logo-cloud" aria-label="Platform logos">
+          <span>Apple iOS</span>
+          <span>Vercel</span>
+          <span>Stripe</span>
+          <span>Twilio</span>
+          <span>Google Maps</span>
+          <span>Firebase</span>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section reveal">
+        <div class="section-head">
+          <p class="eyebrow">Launch Roadmap</p>
+          <h2>What Comes Next</h2>
+        </div>
+        <ol class="roadmap">
+          <li><strong>Phase 1:</strong> Branded website + domain + Apple link verification.</li>
+          <li><strong>Phase 2:</strong> Portal login and customer view rollout.</li>
+          <li><strong>Phase 3:</strong> Full production dispatch + technician app sync.</li>
         </ol>
       </section>
 
-      <section id="contact" class="contact reveal">
-        <h2>Launch This Week</h2>
-        <p>Replace this with your real contact route or embedded calendar.</p>
-        <form>
+      <section id="contact" class="section cta reveal">
+        <h2>Want First Access To The Launch?</h2>
+        <p>Drop your details and we will onboard your team as soon as the production portal opens.</p>
+        <form class="lead-form" id="lead-form">
           <label>
             Name
-            <input type="text" placeholder="Your name" />
+            <input type="text" name="name" placeholder="Your name" required />
           </label>
           <label>
             Work email
-            <input type="email" placeholder="name@company.com" />
+            <input type="email" name="email" placeholder="name@company.com" required />
           </label>
           <label>
             Team size
-            <input type="text" placeholder="10 technicians" />
+            <input type="text" name="size" placeholder="e.g. 12 field staff" required />
           </label>
-          <button type="button" class="btn" id="fake-submit">Send Request</button>
+          <button class="btn" type="submit">Request Invite</button>
         </form>
-        <p class="small" id="form-status" aria-live="polite"></p>
+        <p class="form-message" id="lead-message" aria-live="polite"></p>
       </section>
     </main>
 
-    <footer>
-      <p>© <span id="year"></span> TaskHawk. All rights reserved.</p>
+    <footer class="site-footer">
+      <p>© <span id="year"></span> TaskHawk. Built for field operations.</p>
+      <a href="portal.html">Portal Login</a>
     </footer>
 
     <script src="app.js"></script>

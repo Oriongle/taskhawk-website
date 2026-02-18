@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskHawk Portal | Login</title>
+    <meta
+      name="description"
+      content="TaskHawk portal login for operations teams and clients."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="portal-body">
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-orb bg-orb-one" aria-hidden="true"></div>
+
+    <main class="portal-wrap reveal">
+      <a class="brand portal-brand" href="/">
+        <span class="brand-mark" aria-hidden="true">TH</span>
+        <span>TaskHawk</span>
+      </a>
+
+      <section class="portal-card">
+        <p class="badge">Portal Access</p>
+        <h1>Sign In To TaskHawk</h1>
+        <p class="portal-copy">
+          Client and operations portal access is currently invite-only while we complete launch rollout.
+        </p>
+
+        <form id="portal-form" class="portal-form">
+          <label>
+            Work email
+            <input type="email" name="email" placeholder="name@company.com" required />
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" placeholder="••••••••" required />
+          </label>
+          <button class="btn" type="submit">Login</button>
+        </form>
+
+        <p class="form-message" id="portal-message" aria-live="polite"></p>
+
+        <div class="portal-links">
+          <a href="#">Forgot password</a>
+          <a href="/">Back to home</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
