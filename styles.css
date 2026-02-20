@@ -179,11 +179,6 @@ main {
   font-size: 1.08rem;
 }
 
-.inline-link {
-  color: var(--brand-soft);
-  font-weight: 600;
-}
-
 .hero-actions {
   margin-top: 22px;
   display: flex;
